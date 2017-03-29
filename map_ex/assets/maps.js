@@ -101,7 +101,7 @@ var WidgetkitMaps = WidgetkitMaps || [];
                     this.attr("href", "http://maps.google.com/?daddr=" + t + "," + e)
                 }, i.controls[google.maps.ControlPosition.TOP_RIGHT].push(a[0])), p.length && s.marker && (p.forEach(function(t, e) {
 					var mapOptions={
-                        position: new google.maps.LatLng(t.lat, t.lng),
+                        position: new google.maps.LatLng(parseFloat(t.lat), parseFloat(t.lng)),
                         map: i,
                         title: t.title
                     };
